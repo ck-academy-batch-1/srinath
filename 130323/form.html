@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <style>
+      body{
+        background-image: url(https://getwallpapers.com/wallpaper/full/d/0/a/1182827-free-download-justin-maller-wallpaper-3840x2160-samsung-galaxy.jpg) ;
+        background-size: 100%;
+
+      }
+    </style>
+</head>
+<body>
+<!--used inputmode instead of type to display a virtual keyboard
+   while entering credit card or any pin services-->
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+  <label>Enter your name:
+  <input inputmode="text" name="name" id="name" ></label> 
+
+  <br><br><br><br>
+  
+  <label>Enter your email:
+  <input inputmode="email" name="email" id="email" ></label>
+  <br><br><br><br>
+
+  <label>Enter your pincode:
+    <input inputmode="numeric" name="numeric" id="numeric" ></label>
+    <br><br><br><br>
+  
+  <label >Enter your phone number:
+  <input inputmode="tel" name="phone" id="phone" ></label>
+  <br><br><br><br>
+ 
+  <label for="pdf-file">Select a PDF file:</label>
+  <input type="file" id="pdf-file" name="pdf-file" accept=".pdf">
+  <br><br><br><br>
+  <button type="submit">Upload</button>
+  
+</form>
+</div>
+</body>
+</html>
